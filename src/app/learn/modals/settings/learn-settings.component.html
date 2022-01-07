@@ -1,0 +1,40 @@
+<div class="modal-header">
+  <h4 class="modal-title" id="modal-basic-title">Configurações</h4>
+  <button type="button" class="btn btn-sm btn-link text-dark" aria-label="Close" (click)="close()">
+    <i class="bi bi-x-circle"></i>
+  </button>
+</div>
+<div class="modal-body">
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Língua</label>
+      <select class="form-control">
+        <option>Portuguese to English</option>
+        <option>English to Portuguese</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Nível</label>
+      <select class="form-control">
+        <option>Nivel 1</option>
+        <option>Nivel 2</option>
+        <option>Nivel 3</option>
+        <option>Nivel 4</option>
+        <option>Nivel 5</option>
+        <option>Nivel 6</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Questões por página</label>
+      <input type="number" min="0" value="6" class="form-control" />
+      <div id="emailHelp" class="form-text">Deixe zero para exibir todas questões.</div>
+    </div>
+    <div class="mb-3 form-check">
+      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">Exibir ajuda</label>
+    </div>
+  </form>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-success" (click)="close()">Confirm</button>
+</div>
